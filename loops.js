@@ -1,0 +1,44 @@
+function positiveIntSum(limit){
+    let sum = 0;
+    for(let k=1; k<=limit; k++){
+        sum = sum + k;
+    }
+    return sum;
+}
+
+
+function addSum(start, diff, max){
+    //setting up varaibles
+    let sum = 0;
+    let currentNumber = start;
+
+    while(currentNumber <= max){
+        //adding to the sum.
+        sum = sum + currentNumber;
+        //moving to the next number in the list.
+        currentNumber = currentNumber + diff;
+    }
+
+    return sum;
+}
+
+function multSum(start, factor, max){
+    //setting up varaibles
+    let sum = 0;
+    let currentNumber = start;
+
+    while(currentNumber <= max){
+        //adding to the sum.
+        sum = sum + currentNumber;
+        //moving to the next number in the list.
+        currentNumber = currentNumber * factor;
+    }
+
+    return sum;
+}
+console.log(positiveIntSum(100));
+console.log(positiveIntSum(100));
+console.log(addSum(10, 5, 100));
+console.log(addSum(10, 5, 100));
+console.log(multSum(1, 3, 100));
+console.log(multSum(1, 3, 100));
