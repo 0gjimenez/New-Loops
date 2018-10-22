@@ -36,9 +36,9 @@ function multSum(start, factor, max){
 
     return sum;
 }
-console.log(positiveIntSum(100));
-console.log(positiveIntSum(100));
-console.log(addSum(10, 5, 100));
-console.log(addSum(10, 5, 100));
-console.log(multSum(1, 3, 100));
-console.log(multSum(1, 3, 100));
+console.log(positiveIntSum(1500));
+console.log(positiveIntSum(200000));
+console.log(addSum(-80, 60, 3000));
+console.log(addSum(4, 3, 50000));
+console.log(multSum(7, 2, 50000));
+console.log(multSum(2,-3, 1000000));
